@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registro</title>
+        <link rel="stylesheet" href="../css/registro.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="stylesheet" href="../css/footer.css">
+        <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200;400;500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="go-top">
+            <span class="fas fa-angle-up"></span>
+        </div>
+        <header id="header">
+            <nav class="menu">
+                <div class="logo-box">
+                    <h1><img class="imglogo" src="../imagenes/logoxdd.jpeg" alt=""></h1>
+                    <span class="btn-menu"><i class="fas fa-bars"></i></span>
+                </div>
+        
+                <div class="list-container">
+                    <ul class="lists">
+                        <li><a href="https://www.gob.pe/9862-coronavirus-medidas-y-recomendaciones-para-viajes-interprovinciales-terrestres-durante-la-emergencia-nacional" class="activo" target="_blank"><i class="fas fa-virus"></i></a></li>
+                        <li class="sub-lists"><a href="../paginas/MyPet.html" class="mover">Inicio</a></li>
+                        <li class="sub-lists"><a href="../paginas/Conócenos.html" class="mover">Conócenos</a></li>
+                        <li class="sub-lists"><a href="../paginas/razas.html" class="mover">Razas de Perros<i class="fas fa-chevron-down"></i></a>
+                        
+                        </li>
+                        <li class="sub-lists"><a href="../paginas/index.html" class="mover">Tienda<i class="fas fa-chevron-down"></i></a>
+                            <li class="sub-lists"><a href="../paginas/registro.html" class="mover">Registro</a></li>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </nav>          
+        </header>
+        
+        <form action="" class="form-register" method="POST" id="form" onsubmit="return validar(this)">
+            <h4>Formulario Registro</h4>
+            <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre">
+            <input class="controls" type="txt" name="apellidos" id="apellidos" placeholder="Ingrese su Apellido">
+            <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
+            <input class="controls" type="password" name="password" id="password" placeholder="Ingrese su Contraseña">
+            <button class="boton" type="submit" name="enviar">Registrar</button>
+            <p><a href="#">¿Ya tengo Cuenta?</a></p>
+        </form>  
+    <br>
+        <footer class="footer">
+            <div class="footer-content">
+                <h3>Más sobre nosotros</h3>
+                <p>En cada unos de los enlaces encontraras información relevante</p>
+                <ul class="socials">
+                    <li><a href="https://es-la.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https://twitter.com/?lang=es" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://mail.google.com/" target="_blank"><i class="fas fa-envelope"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; Mypet - 2021 | todos los derechos reservados</p>
+            </div>
+        </footer>
+    </body>
+</html>
+<script src="../js/registro.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://kit.fontawesome.com/afd752420c.js" crossorigin="anonymous"></script>

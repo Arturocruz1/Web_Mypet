@@ -1,0 +1,241 @@
+:root{
+    --orange:#ee6f57;
+    --blue:#1f3c88;
+    --darkblue:#070d59;
+    --white:#f6f5f5;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #fff;
+    overflow-x: hidden;
+    font-family: 'Karla', sans-serif;
+}
+
+.go-top{
+    position: fixed;
+    bottom: 100px;
+    right: -100%;
+    width: 50px;
+    height: 50px;
+    background: #ffff;
+    border: 2px solid var(--orange);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1000;
+    transition: 0.5s;
+}
+
+.go-top > span:hover{
+    color: var(--white);
+}
+
+.go-top:hover{
+    background: var(--orange);
+    color: #fff;
+    border: 2px solid var(--white)
+}
+
+.go-top > span{
+    font-size: 30px;
+    color: var(--darkblue);
+}
+
+#header{
+    position: relative;
+    width: 100%;
+}
+.btn-menu > .fa-bars{
+    display: none;
+}
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999;
+}
+.menu .logo-box{
+    margin-left: 20px;
+}
+.imglogo{
+    width: 164px;
+    height: 65px;
+}
+.menu .list-container{
+    margin-right: 20px;
+}
+.menu .list-container ul{
+    display: flex;
+}
+.menu .list-container ul li{
+    list-style: none;
+}
+.menu .list-container ul li a{
+    text-decoration: none;
+    margin: 0px 10px;
+    padding: 8px;
+    color: cyan;
+    border-radius: 24px;
+    transition: 0.3s;
+    font-size: 16px;
+}
+    /*menu desplegable*/
+.menu .list-container a{
+    display: block;
+    text-decoration: none;
+}
+.menu .list-container ul ul{
+    display: none;
+}
+.menu .list-container ul li:hover ul{
+    display: block;
+    position: absolute;
+    background: white;
+    border-radius: 15px;
+}
+.lists .mover i{
+    margin-left: 10px;
+}
+.lists .mover:hover i{
+    color: white;
+}
+    /*fin de menu desplegable*/
+.menu .list-container ul li a.activo{
+    background: cyan;
+    color: white;
+}
+.menu .list-container ul li a:hover{
+    background: white;
+    color: black;
+}
+.lists a:hover i{
+    color: blue;
+}
+
+.img-header{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(../imagenes/img1.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.img-header .welcome{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.img-header .welcome h1{
+    font-size: 50px;
+    color: cyan;
+    font-weight: 200;
+}
+
+.img-header .welcome hr{
+    width: 400px;
+    height: 2px;
+    background: white;
+    border: none;
+    margin-top: 5px;
+}
+
+.img-header .welcome p{
+    font-size: 20px;
+    color: cyan;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.footer{
+    background: #111;
+    height: auto;
+    width: 100vw;
+    padding-top: 40px;
+    color: cyan;
+    border-top: 3px solid rgb(0, 0, 0);
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.footer-content p{
+    max-width: 500px;
+    margin:  10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.socials li{
+    margin: 0 10px;
+}
+
+.socials a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.socials a li{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+
+.socials a:hover i{
+    color: cyan;
+}
+
+.footer-bottom{
+    background: #000;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}

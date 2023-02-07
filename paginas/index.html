@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MyPet</title>
+        <link rel="shortcut icon" href="../imagenes/logoxdd.jpeg" type="image/x-icon">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/footer.css">
+        <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="go-top">
+            <span class="fas fa-angle-up"></span>
+        </div>
+        <header id="header">
+            <nav class="menu">
+                <div class="logo-box">
+                    <h1><img class="imglogo" src="../imagenes/logoxdd.jpeg" alt=""></h1>
+                    <span class="btn-menu"><i class="fas fa-bars"></i></span>
+                </div>
+        
+                <div class="list-container">
+                    <ul class="lists">
+                        <li><a href="https://www.gob.pe/9862-coronavirus-medidas-y-recomendaciones-para-viajes-interprovinciales-terrestres-durante-la-emergencia-nacional" class="activo" target="_blank"><i class="fas fa-virus"></i></a></li>
+                        <li class="sub-lists"><a href="../paginas/MyPet.html" class="mover">Inicio</a></li>
+                        <li class="sub-lists"><a href="../paginas/Conócenos.html" class="mover">Conócenos</a></li>
+                        <li class="sub-lists"><a href="../paginas/razas.html" class="mover">Razas de Perros<i class="fas fa-chevron-down"></i></a>
+                        </li>
+                        <li class="sub-lists"><a href="../paginas/index.html" class="mover">Tienda<i class="fas fa-chevron-down"></i></a>
+                            
+                        </li>
+                        
+                        <li class="sub-lists"><a href="../paginas/registro.html" class="mover">Registro</a></li>
+                    </ul>
+                </div>
+            </nav>
+        <header>
+            <br>
+            <div class="header-section container">
+                <img src="" alt="">
+                <div>
+                    <img onmouseover="showCart(this)" class="cart" src="../imagenes/carrito de compras.png" alt="">
+                    <p class="count-product">0</p>
+                </div>
+                <div class="cart-products" id="products-id">
+                    <p class="close-btn" onclick="closeBtn()">X</p>
+                    <h3>Carro de compras - MyPet</h3>
+                    <div class="card-items">
+                    </div>
+                    <h2>Total: <strong class="price-total">0</strong> $</h2>
+                </div>
+            </div>
+        </header>
+        <section class="container">
+            <div class="products">
+                <div class="carts">
+                    <div>
+                        <img src="../imagenes/Pitiido Juguete.jpg" alt="">
+                        <p><span>20</span>$</p>
+                    </div>
+                    <p class="title">Juguete: Pitido de Perro</p>
+                    <a href="" data-id="1" class="btn-add-cart">Comprar</a>
+                </div>
+                <div class="carts">
+                    <div>
+                        <img src="../imagenes/Adragna.png" alt="">
+                        <p><span>35</span>$</p>
+                    </div>
+                    <p class="title">Adragna</p>
+                    <a href="" class="btn-add-cart" data-id="2">Comprar</a>
+                </div>
+                <div class="carts">
+                    <div>
+                        <img src="../imagenes/Juguete Zapato.png" alt="">
+                        <p><span>15.50</span>$</p>
+                    </div>
+                    <p class="title">Juguete: Zapato</p>
+                    <a href="" data-id="3" class="btn-add-cart">Comprar</a>
+                </div>
+                <div class="carts">
+                    <div>
+                        <img src="../imagenes/Colonia Vainilla.png" alt="">
+                        <p><span>20.20</span>$</p>
+                    </div>
+                    <p class="title">Colonia Vainilla</p>
+                    <a href="" data-id="4" class="btn-add-cart">Comprar</a>
+                </div>
+                <div class="carts">
+                    <div>
+                        <img src="../imagenes/Bolsas Biodegradables Rosado.png" alt="">
+                        <p><span>19</span>$</p>
+                    </div>
+                    <p class="title">Bolsas Biodegradables Rosado</p>
+                    <a href="" data-id="5" class="btn-add-cart">Comprar</a>
+                </div>
+                <div class="carts">
+                    <div>
+                        <img src="../imagenes/imagen cepillo.jpg" alt="">
+                        <p><span>45</span>$</p>
+                    </div>
+                    <p class="title">Set cepillo groomer para perro</p>
+                    <a href="" data-id="6" class="btn-add-cart">Comprar</a>
+                </div>
+                <div class="carts">
+                    <div>
+                        <img src="../imagenes/Plato acero super grande.png" alt="">
+                        <p><span>23.99</span>$</p>
+                    </div>
+                    <p class="title">Plato de acero super grande</p>
+                    <a href="" data-id="7" class="btn-add-cart">Comprar</a>
+                </div>
+                <div class="carts">
+                    <div>
+                        <img src="../imagenes/Cepillo Universal medium gris.png" alt="">
+                        <p><span>50</span>$</p>
+                    </div>
+                    <p class="title">Cepillo Universal medium gris</p>
+                    <a href="" data-id="8" class="btn-add-cart">Comprar</a>
+                </div>
+                <div class="carts">
+                    <div>
+                        <img src="../imagenes/Pañal Claws & Paws x 50 pads.png" alt="">
+                        <p><span>16</span>$</p>
+                    </div>
+                    <p class="title">Pañal Claws & Paws x 50 pads</p>
+                    <a href="" data-id="9" class="btn-add-cart">Comprar</a>
+                </div>
+                <div class="carts">
+                    <div>
+                        <img src="../imagenes/Jugeuete + Alimento Bone M.png" alt="">
+                        <p><span>17.50</span>$</p>
+                    </div>
+                    <p class="title">Jugeuete + Alimento Bone M</p>
+                    <a href="" data-id="10" class="btn-add-cart">Comprar</a>
+                </div>
+                <div class="carts">
+                    <div>
+                        <img src="../imagenes/Porta Mascotas Tela M Gris.png" alt="">
+                        <p><span>45</span>$</p>
+                    </div>
+                    <p class="title">Porta Mascotas Tela M Gris</p>
+                    <a href="" data-id="11" class="btn-add-cart">Comprar</a>
+                </div>
+            </div>
+        </section>
+
+    
+            
+        </footer>
+        <script>
+            function showCart(x){
+                document.getElementById("products-id").style.display = "block";
+            }
+            function closeBtn(){
+                document.getElementById("products-id").style.display = "none";
+            }
+
+        </script>
+        <footer class="footer">
+            <div class="footer-content">
+                <h3>Más sobre nosotros</h3>
+                <p>En cada unos de los enlaces encontraras información relevante</p>
+                <ul class="socials">
+                    <li><a href="https://es-la.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https://twitter.com/?lang=es" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://mail.google.com/" target="_blank"><i class="fas fa-envelope"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; MyPet - 2021 | todos los derechos reservados</p>
+            </div>
+        </footer>
+        <script src="../js/Tienda.js" ></script>
+    </body>
+</html>
